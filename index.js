@@ -109,9 +109,9 @@ function isAnagram(a,b){
         isMatch=false;
         //MENCOCOKAN KE SETIAP KARAKTER T
         for(let j=0;j<t.length;j++){
-            //SKIP FOR LOOP JIKA KARAKTER SUDAH PERNAH DICOCOKAN
+            //SKIP ITERASI FOR LOOP JIKA KARAKTER SUDAH PERNAH DICOCOKAN LANGSUNG KE ITERASI SETELAHNYA (j++)
             if(flagMatch[j] === 1) continue;
-            //JIKA SAMA MAKA DI FLAG UNTUK MENANDAI SUDAH DICOCOKAN
+            //JIKA SAMA MAKA DI FLAG UNTUK MENANDAI SUDAH DICOCOKAN, BREAK INNER FOR LOOP KEMBALI KE OUTSIDE FOR LOOP(i++)
             if(s[i]===t[j]){
                 flagMatch[j]=1;
                 isMatch=true;
