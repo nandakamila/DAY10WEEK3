@@ -89,7 +89,7 @@ console.log(removeDuplicates([1]));
 function isAnagram(a,b){
     // MENGHILANGKAN SPASI DAN BUAT KARAKTER LOWER CASE AGAR KONSISTEN UNTUK PENGECEKAN
     // REGULAR EXPRESSION DALAM JAVASCRIPT:
-    // //=find /abc/=find abc /\s/ = find satu spasi /\s+/ = find lebih dari satu spasi g = global search
+    // //=find(work like a quote) /abc/=find abc /\s/ = find satu spasi /\s+/ = find lebih dari satu spasi g = global search
     s = a.replace(/\s+/g, '').toLowerCase();
     t = b.replace(/\s+/g, '').toLowerCase();
 
